@@ -1,6 +1,6 @@
 # market-hawk-sentiment
 
-![Hawket logo](hawk.png)
+![Hawket logo](hawk1.jpg)
 
 # Structure tree:
 
