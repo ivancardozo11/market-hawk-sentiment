@@ -1,0 +1,11 @@
+{
+  "name": "market-hawk-sentiment",
+  "version": "1.0.0",
+  "description": "An app that monitors the sentiment of multiple markets()\u001b[Dprecious metals stocks, foreing exchange, oil and crypto assets) and returns a summary.",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "echo 'No tests yet' \""
+  },
+  "author": "Ivan Cardozo",
+  "license": "ISC"
+}
