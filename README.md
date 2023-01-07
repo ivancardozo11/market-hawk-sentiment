@@ -2,62 +2,64 @@
 
 MarketHawkSentiment
 
-``
 
-├── src
+├── SRC
 
-│   ├── api
+│ ├── API
 
-│   │   ├── get-sentiment-data.ts
+│ │ ├── get-sentiment-data.ts
 
-│   │   ├── get-sentiment-summary.ts
+│ │ ├── get-sentiment-summary.ts
 
-│   │   └── index.ts
+│ │ └── index.ts
 
-│   ├── common
+│ ├── CLIENT
 
-│   │   ├── constants.ts
+│ │ ├── components
 
-│   │   ├── errors.ts
+│ │ ├── pages
 
-│   │   ├── interfaces.ts
+│ │ ├── utils
 
-│   │   └── utils.ts
-│   ├── data-access
+│ │ ├── App.tsx
 
-│   │   ├── dynamodb.ts
+│ │ ├── index.tsx
 
-│   │   ├── get-sentiment-data.ts
+│ │ └── serviceWorker.ts
 
-│   │   ├── save-sentiment-data.ts
+│ ├── COMMON
 
-│   │   └── update-sentiment-summary.ts
+│ │ ├── constants.ts
 
-│   ├── microservices
+│ │ ├── errors.ts
 
-│   │   ├── analyze-sentiment.ts
+│ │ ├── interfaces.ts
 
-│   │   ├── get-sentiment-data.ts
+│ │ └── utils.ts
 
-│   │   ├── get-sentiment-summary.ts
+│ ├── DATA-ACCESS
 
-│   │   ├── save-sentiment-data.ts
+│ │ ├── dynamodb.ts
 
-│   │   └── update-sentiment-summary.ts
+│ │ ├── get-sentiment-data.ts
 
-│   ├── react-frontend
+│ │ ├── save-sentiment-data.ts
 
-│   │   ├── components
+│ │ └── update-sentiment-summary.ts
 
-│   │   ├── pages
+│ ├── MICROSERVICES
 
-│   │   ├── services
+│ │ ├── analyze-sentiment.ts
 
-│   │   ├── App.tsx
+│ │ ├── get-sentiment-data.ts
 
-│   │   └── index.tsx
+│ │ ├── get-sentiment-summary.ts
 
-│   └── server.ts
+│ │ ├── save-sentiment-data.ts
+
+│ │ └── update-sentiment-summary.ts
+
+│ └── server.ts
 
 ├── .gitignore
 
@@ -71,4 +73,3 @@ MarketHawkSentiment
 
 └── tsconfig.json
 
-``
