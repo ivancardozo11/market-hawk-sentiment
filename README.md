@@ -1,5 +1,7 @@
 # market-hawk-sentiment
 
+![Hawket logo](hawk.png)
+
 # Structure tree:
 
 ├── SRC
