@@ -8,63 +8,65 @@
 
 # Structure tree:
 
+├── CLIENT
+
+│   ├── components
+
+│   ├── pages
+
+│   ├── utils
+
+│   ├── App.tsx
+
+│   ├── index.tsx
+
+│   ├── package.json
+
+│   └── serviceWorker.ts
+
 ├── SRC
 
-│ ├── API
+│   ├── API
 
-│ │ ├── get-sentiment-data.ts
+│   │   ├── get-sentiment-data.ts
 
-│ │ ├── get-sentiment-summary.ts
+│   │   ├── get-sentiment-summary.ts
 
-│ │ └── index.ts
+│   │   └── index.tsx
 
-│ ├── CLIENT
+│   ├── COMMON
 
-│ │ ├── components
+│   │   ├── constants.ts
 
-│ │ ├── pages
+│   │   ├── errors.ts
 
-│ │ ├── utils
+│   │   ├── interfaces.ts
 
-│ │ ├── App.tsx
+│   │   └── utils.ts
 
-│ │ ├── index.tsx
+│   ├── DATA-ACCESS
 
-│ │ └── serviceWorker.ts
+│   │   ├── dynamodb.ts
 
-│ ├── COMMON
+│   │   ├── get-sentiment-data.ts
 
-│ │ ├── constants.ts
+│   │   ├── save-sentiment-data.ts
 
-│ │ ├── errors.ts
+│   │   └── update-sentiment-summary.ts
 
-│ │ ├── interfaces.ts
+│   ├── MICROSERVICES
 
-│ │ └── utils.ts
+│   │   ├── analyze-sentiment.ts
 
-│ ├── DATA-ACCESS
+│   │   ├── get-sentiment-data.ts
 
-│ │ ├── dynamodb.ts
+│   │   ├── get-sentiment-summary.ts
 
-│ │ ├── get-sentiment-data.ts
+│   │   ├── save-sentiment-data.ts
 
-│ │ ├── save-sentiment-data.ts
+│   │   └── update-sentiment-summary.ts
 
-│ │ └── update-sentiment-summary.ts
-
-│ ├── MICROSERVICES
-
-│ │ ├── analyze-sentiment.ts
-
-│ │ ├── get-sentiment-data.ts
-
-│ │ ├── get-sentiment-summary.ts
-
-│ │ ├── save-sentiment-data.ts
-
-│ │ └── update-sentiment-summary.ts
-
-│ └── server.ts
+│   └── server.ts
 
 ├── .gitignore
 
@@ -77,6 +79,7 @@
 ├── serverless.yml
 
 └── tsconfig.json
+
 
 
 # MarketHawkSentiment description:
