@@ -24,6 +24,8 @@
 
 │   └── serviceWorker.ts
 
+│   └── tsconfig.json
+
 ├── SRC
 
 │   ├── API
