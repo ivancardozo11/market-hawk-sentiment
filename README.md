@@ -34,7 +34,7 @@
 
 │   │   ├── get-sentiment-summary.ts
 
-│   │   └── index.tsx
+│   │   └── index.ts
 
 │   ├── COMMON
 
@@ -100,4 +100,8 @@ Is an app that allows users to get real-time sentiment analysis of the gold, sto
 
 -Docker.
 
--CI/CD delivery pipelines in place.
+-CI/CD delivery pipelines.
+
+-Serverless framework.
+
+-DynamoDB.
