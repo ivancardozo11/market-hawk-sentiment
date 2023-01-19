@@ -30,10 +30,6 @@
 
 │   ├── API
 
-│   │   ├── get-sentiment-data.ts
-
-│   │   ├── get-sentiment-summary.ts
-
 │   │   └── index.ts
 
 │   ├── COMMON
@@ -49,12 +45,6 @@
 │   ├── DATA-ACCESS
 
 │   │   ├── dynamodb.ts
-
-│   │   ├── get-sentiment-data.ts
-
-│   │   ├── save-sentiment-data.ts
-
-│   │   └── update-sentiment-summary.ts
 
 │   ├── MICROSERVICES
 
