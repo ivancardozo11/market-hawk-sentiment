@@ -1,4 +1,5 @@
-service: market-hawk-sentiment
+service: hawket-service
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs18.13
+   region: eu-south-2
