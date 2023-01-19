@@ -1,4 +1,4 @@
-service: hawket-service
+service: harket-service
 
 provider:
   name: aws
