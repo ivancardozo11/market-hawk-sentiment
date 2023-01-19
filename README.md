@@ -30,10 +30,6 @@
 
 │   ├── API
 
-│   │   ├── get-sentiment-data.ts
-
-│   │   ├── get-sentiment-summary.ts
-
 │   │   └── index.ts
 
 │   ├── COMMON
@@ -49,12 +45,6 @@
 │   ├── DATA-ACCESS
 
 │   │   ├── dynamodb.ts
-
-│   │   ├── get-sentiment-data.ts
-
-│   │   ├── save-sentiment-data.ts
-
-│   │   └── update-sentiment-summary.ts
 
 │   ├── MICROSERVICES
 
@@ -105,3 +95,5 @@ Is an app that allows users to get real-time sentiment analysis of the gold, sto
 -Serverless framework.
 
 -DynamoDB.
+
+-Amazon S3 (Simple Storage Service).
