@@ -105,3 +105,5 @@ Is an app that allows users to get real-time sentiment analysis of the gold, sto
 -Serverless framework.
 
 -DynamoDB.
+
+-Amazon S3 (Simple Storage Service).
