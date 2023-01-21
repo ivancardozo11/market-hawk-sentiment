@@ -22,7 +22,7 @@
 
 │   ├── package.json
 
-│   └── serviceWorker.ts
+│   ├── serviceWorker.ts
 
 │   └── tsconfig.json
 
@@ -30,7 +30,7 @@
 
 │   ├── API
 
-│   │   └── index.ts
+│   │   ├── index.ts
 
 │   ├── COMMON
 
@@ -48,17 +48,29 @@
 
 │   ├── MICROSERVICES
 
-│   │   ├── analyze-sentiment.ts
+│   │   ├── sentiment
 
-│   │   ├── get-sentiment-data.ts
+│   │   │   ├── analyze-sentiment.ts
 
-│   │   ├── get-sentiment-summary.ts
+│   │   │   ├── get-sentiment-data.ts
 
-│   │   ├── save-sentiment-data.ts
+│   │   │   ├── get-sentiment-summary.ts
 
-│   │   └── update-sentiment-summary.ts
+│   │   │   ├── save-sentiment-data.ts
 
-│   └── server.ts
+│   │   │   └── update-sentiment-summary.ts
+
+│   ├── ROUTES
+
+│   │   ├── api
+
+│   │   │   ├── v1
+
+│   │   │   │   ├── sentiment-microservice
+
+│   │   │   │   │   └── sentimentRoutes.ts
+
+        └── index.ts
 
 ├── .gitignore
 
@@ -68,9 +80,14 @@
 
 ├── package.json
 
+├── server.ts
+
 ├── serverless.yml
 
 └── tsconfig.json
+
+
+
 
 
 
