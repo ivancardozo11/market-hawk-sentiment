@@ -8,6 +8,7 @@
 
 # Structure tree:
 
+.
 ├── CLIENT
 
 │   ├── components
@@ -83,6 +84,7 @@
 ├── serverless.yml
 
 └── tsconfig.json
+
 
 
 
