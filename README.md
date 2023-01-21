@@ -8,7 +8,7 @@
 
 # Structure tree:
 
-.
+
 ├── CLIENT
 
 │   ├── components
