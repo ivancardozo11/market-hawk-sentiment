@@ -70,8 +70,6 @@
 
 │   │   │   │   │   └── sentimentRoutes.ts
 
-        └── index.ts
-
 ├── .gitignore
 
 ├── docker-compose.yml
