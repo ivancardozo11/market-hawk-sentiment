@@ -8,6 +8,7 @@
 
 # Structure tree:
 
+
 ├── CLIENT
 
 │   ├── components
@@ -70,8 +71,6 @@
 
 │   │   │   │   │   └── sentimentRoutes.ts
 
-        └── index.ts
-
 ├── .gitignore
 
 ├── docker-compose.yml
@@ -85,6 +84,7 @@
 ├── serverless.yml
 
 └── tsconfig.json
+
 
 
 
