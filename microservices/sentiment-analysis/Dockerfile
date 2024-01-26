@@ -2,11 +2,11 @@ FROM node:16-alpine as builder
 
 WORKDIR /usr/src/app
 
-COPY data-collector/package*.json ./
+COPY sentiment-analysis/package*.json ./
 RUN npm install
 
-COPY data-collector/src ./src
-COPY data-collector/tsconfig.json ./
+COPY sentiment-analysis/src ./src
+COPY sentiment-analysis/tsconfig.json ./
 
 RUN npm run build
 
@@ -15,7 +15,7 @@ FROM node:16-alpine
 WORKDIR /usr/app
 
 COPY --from=builder /usr/src/app/dist ./dist
-COPY data-collector/package*.json ./
+COPY sentiment-analysis/package*.json ./
 
 RUN npm install --only=production
 

@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  data-collector:
+    build:
+      context: ./microservices/data-collector
+    ports:
+      - "3001:3001"
+    depends_on:
+      - redis
+    environment:
+      - NODE_ENV=production
+    networks:
+      - my_act_network
+
+  sentiment-analysis:
+    build:
+      context: ./microservices/sentiment-analysis
+    ports:
+      - "3002:3002"
+    depends_on:
+      - redis
+    environment:
+      - NODE_ENV=production
+    networks:
+      - my_act_network
+
+  redis:
+    image: "redis:6-alpine"
+    ports:
+      - "6379:6379"
+    networks:
+      - my_act_network
+
+networks:
+  my_act_network:
+    name: my_act_network
