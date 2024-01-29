@@ -1,0 +1,31 @@
+service: sentiment-analysis
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-south-2
+  stage: dev
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "dynamodb:*"
+        - "s3:*"
+      Resource: "*"
+
+functions:
+  analyzeSentimentFunction:
+    handler: src/analyzeSentiment.handler
+
+resources:
+  Resources:
+    SentimentAnalysisTable:
+      Type: "AWS::DynamoDB::Table"
+      Properties:
+        TableName: "SentimentAnalysisTable${self:provider.stage}"
+        AttributeDefinitions:
+          - AttributeName: "id"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "id"
+            KeyType: "HASH"
+        BillingMode: PAY_PER_REQUEST

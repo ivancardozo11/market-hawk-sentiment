@@ -1,0 +1,39 @@
+service: data-collector
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-south-2
+  stage: dev
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:*"
+        - "dynamodb:*"
+      Resource: "*"
+
+functions:
+  collectDataFunction:
+    handler: src/collectData.handler
+
+resources:
+  Resources:
+    DataCollectorBucket:
+      Type: "AWS::S3::Bucket"
+      Properties:
+        BucketName: "datacollectorbucket"
+
+    DataCollectorTable:
+      Type: "AWS::DynamoDB::Table"
+      Properties:
+        TableName: "DataCollectorTable${self:provider.stage}"
+        AttributeDefinitions:
+          - AttributeName: "id"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "id"
+            KeyType: "HASH"
+        BillingMode: PAY_PER_REQUEST
+        
+plugins:
+  - serverless-offline
