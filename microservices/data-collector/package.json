@@ -29,7 +29,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@types/aws-lambda": "^8.10.133",
+    "aws-sdk": "^2.1548.0",
+    "dynamoose": "^4.0.0",
     "express": "^4.18.2",
-    "kafkajs": "^2.2.4"
+    "kafkajs": "^2.2.4",
+    "superagent": "^7.1.5"
   }
 }

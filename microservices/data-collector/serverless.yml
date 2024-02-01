@@ -5,16 +5,29 @@ provider:
   runtime: nodejs18.x
   region: eu-south-2
   stage: dev
+  profile: HarketDev
   iamRoleStatements:
     - Effect: "Allow"
       Action:
         - "s3:*"
+      Resource: "arn:aws:s3:::*"
+    - Effect: "Allow"
+      Action:
         - "dynamodb:*"
-      Resource: "*"
+      Resource: "arn:aws:dynamodb:eu-south-2:*:*"
 
 functions:
   collectDataFunction:
-    handler: src/collectData.handler
+    handler: src/lambdas/collectData.handler
+  processDataFunction:
+    handler: src/lambdas/processData.handler
+    events:
+      - s3:
+          bucket: datacollectorbucket
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: "uploads/"
+            - suffix: ".txt"
 
 resources:
   Resources:
